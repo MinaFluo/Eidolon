@@ -10,4 +10,10 @@ class ApiKeyManager(context: Context) {
     fun storeApiKey(apiKey: String) {
         sharedPreferences.edit().putString("api_key", apiKey).apply()
     }
+
+    fun getStoredBaseUrl(): String? = sharedPreferences.getString("base_url", null)
+
+    fun storeBaseUrl(baseUrl: String) {
+        sharedPreferences.edit().putString("base_url", baseUrl).apply()
+    }
 } 
