@@ -1,4 +1,4 @@
-package io.citmina.eidolon.ui.theme
+package io.citmina.proxychat.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,6 +1,6 @@
-package io.citmina.eidolon.service
+package io.citmina.proxychat.service
 
-import io.citmina.eidolon.data.ChatMessage
+import io.citmina.proxychat.data.ChatMessage
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody

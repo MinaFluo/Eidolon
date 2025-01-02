@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Eidolon"
+rootProject.name = "ProxyGPT"
 include(":app")

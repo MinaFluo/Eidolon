@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.citmina.eidolon"
+    namespace = "io.citmina.proxychat"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.citmina.eidolon"
+        applicationId = "io.citmina.proxychat"
         minSdk = 33
         targetSdk = 34
         versionCode = 1

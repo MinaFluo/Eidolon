@@ -1,4 +1,4 @@
-package io.citmina.eidolon.data
+package io.citmina.proxychat.data
 
 data class ChatMessage(
     val content: String,

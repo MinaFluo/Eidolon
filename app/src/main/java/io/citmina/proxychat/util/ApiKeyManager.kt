@@ -1,4 +1,4 @@
-package io.citmina.eidolon.util
+package io.citmina.proxychat.util
 
 import android.content.Context
 

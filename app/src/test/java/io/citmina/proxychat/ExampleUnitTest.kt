@@ -1,4 +1,4 @@
-package io.citmina.eidolon
+package io.citmina.proxychat
 
 import org.junit.Test
 

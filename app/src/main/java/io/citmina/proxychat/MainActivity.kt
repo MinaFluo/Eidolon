@@ -1,4 +1,4 @@
-package io.citmina.eidolon
+package io.citmina.proxychat
 
 import android.os.Bundle
 import android.view.WindowManager
@@ -15,15 +15,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import io.citmina.eidolon.ui.theme.EidolonTheme
+import io.citmina.proxychat.ui.theme.proxychatTheme
 import androidx.core.view.WindowCompat
 import kotlinx.coroutines.*
 import okhttp3.*
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.navigationBarsPadding
-import io.citmina.eidolon.data.ChatMessage
-import io.citmina.eidolon.service.ChatService
-import io.citmina.eidolon.util.ApiKeyManager
+import io.citmina.proxychat.data.ChatMessage
+import io.citmina.proxychat.service.ChatService
+import io.citmina.proxychat.util.ApiKeyManager
 
 @OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
         
         enableEdgeToEdge()
         setContent {
-            EidolonTheme {
+            proxychatTheme {
                 var messages by remember { mutableStateOf(listOf<ChatMessage>()) }
                 var currentMessage by remember { mutableStateOf(TextFieldValue("")) }
                 var isLoading by remember { mutableStateOf(false) }
